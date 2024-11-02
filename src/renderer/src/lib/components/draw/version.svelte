@@ -17,27 +17,27 @@
 </script>
 
 <div class="p-4 rounded-md bg-amber-200 text-neutral-900 shadow">
-	<h2 class="font-bold text-lg mb-1">Version</h2>
+	<h2 class="font-bold text-lg mb-1">版本</h2>
 
-	<div>Current Version: {version}</div>
+	<div>当前版本：{version}</div>
 
 	{#await fetchVersion()}
-		<p>...waiting</p>
+		<p>...稍等</p>
 	{:then data}
 		{#if data !== version}
-			<p>Latest Version: {data}</p>
+			<p>最新版本：{data}</p>
 			<a
 				class="rounded-md flex items-center justify-center h-8 bg-neutral-900 font-medium text-white mt-2"
 				href="https://github.com/richhost/pixzip-lite/releases"
 				target="_blank"
 				rel="noreferrer"
 			>
-				Download
+				下载
 			</a>
 		{:else}
-			<div>No new version</div>
+			<div>没有新版本</div>
 		{/if}
 	{:catch}
-		<p class="text-red-500">Failed to fetch version.</p>
+		<p class="text-red-500">获取新版本失败</p>
 	{/await}
 </div>

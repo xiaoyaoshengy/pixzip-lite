@@ -20,9 +20,9 @@
 	};
 </script>
 
-<Fieldset legend="Resize" class="flex flex-col gap-2">
+<Fieldset legend="尺寸" class="flex flex-col gap-2">
 	<NumberInput
-		label="Width"
+		label="宽度"
 		inputClass=""
 		class="w-28"
 		value={width}
@@ -32,7 +32,7 @@
 		}}
 	/>
 	<NumberInput
-		label="Height"
+		label="高度"
 		inputClass=""
 		class="w-28"
 		value={height}

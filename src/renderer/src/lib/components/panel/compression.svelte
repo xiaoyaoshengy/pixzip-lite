@@ -24,9 +24,9 @@
 	});
 </script>
 
-<Fieldset legend="Compression">
+<Fieldset legend="压缩">
 	<div class="flex items-center justify-between">
-		<span class="font-medium">Format</span>
+		<span class="font-medium">格式</span>
 		<Select
 			{items}
 			value={[format]}
@@ -40,7 +40,7 @@
 
 	<div>
 		<div class="flex items-center justify-between mb-2">
-			<span class="font-medium">Level</span>
+			<span class="font-medium">压缩等级</span>
 			<span>{level}</span>
 		</div>
 		<Slider
@@ -54,15 +54,15 @@
 			class="py-1"
 		/>
 		<div class="text-xs flex items-center justify-between mt-2 text-neutral-600">
-			<span>Best Quality</span>
-			<span>Lowest Quality</span>
+			<span>最高质量</span>
+			<span>最低质量</span>
 		</div>
 	</div>
 
 	<hr class="border-neutral-200 dark:border-neutral-100/10 my-3" />
 
 	<Checkbox
-		label="Keep EXIF"
+		label="保持EXIF"
 		checked={keepEXIF}
 		onchange={(e) => {
 			spaceConfig.update('keepExif', (e.target as HTMLInputElement).checked);

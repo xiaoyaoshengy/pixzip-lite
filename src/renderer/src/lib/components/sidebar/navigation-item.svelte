@@ -38,7 +38,7 @@
 		<MenuItem
 			value="delete"
 			class="dark:data-[highlighted]:bg-neutral-600 dark:data-[disabled]:text-neutral-500"
-			disabled={length === 1}>Delete</MenuItem
+			disabled={length === 1}>删除</MenuItem
 		>
 	</MenuContent>
 </MenuRoot>

@@ -22,10 +22,9 @@
 </script>
 
 <div class="p-4 dark:bg-neutral-700 dark:text-neutral-100 rounded-md shadow">
-	<h2 class="text-lg font-bold mb-1">Open Source</h2>
+	<h2 class="text-lg font-bold mb-1">开源</h2>
 	<p class="">
-		PixZip's development is based on excellent open-source projects. Special thanks to the following
-		projects
+		PixZip开发基于一些优秀的开源项目。特别鸣谢以下项目
 	</p>
 	<ul class="list-disc px-4 mt-2">
 		{#each links as item}

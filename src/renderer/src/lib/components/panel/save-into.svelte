@@ -20,9 +20,9 @@
 	};
 </script>
 
-<Fieldset legend="Save Into">
+<Fieldset legend="保存">
 	<Radio
-		label="Original Directory"
+		label="原始目录"
 		name="save into"
 		checked={originalDir}
 		onchange={(e) => {
@@ -31,7 +31,7 @@
 	/>
 	<Radio
 		class="my-1"
-		label="Custom Directory"
+		label="自定义目录"
 		name="save into"
 		checked={!originalDir}
 		onchange={(e) => {
@@ -48,7 +48,7 @@
 	<hr class="border-neutral-200 my-4 dark:border-neutral-100/10" />
 
 	<label class="flex items-center justify-between">
-		<span class="font-medium">Suffix</span>
+		<span class="font-medium">后缀</span>
 		<Input
 			class="w-28"
 			value={suffix}

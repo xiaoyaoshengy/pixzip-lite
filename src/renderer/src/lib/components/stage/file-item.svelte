@@ -46,7 +46,7 @@
 <section
 	class={cn('p-1 px-2', {
 		'bg-sky-100/80 dark:bg-sky-800/20': isOpen,
-		'even:bg-neutral-100/80': !isOpen
+		'even:bg-neutral-500/80': !isOpen
 	})}
 >
 	<MenuRoot
@@ -78,19 +78,19 @@
 		</MenuTrigger>
 		<MenuContent>
 			<MenuItem value="show">
-				<SquareArrowOutUpRight class="w-4 h-4 mr-2 text-neutral-500" />Show in Folder
+				<SquareArrowOutUpRight class="w-4 h-4 mr-2 text-neutral-500" />定位到文件夹
 			</MenuItem>
 			{#if OS !== 'linux'}
 				<MenuItem value="copy">
-					<Clipboard class="w-4 h-4 mr-2 text-neutral-500" />Copy
+					<Clipboard class="w-4 h-4 mr-2 text-neutral-500" />复制
 				</MenuItem>
 			{/if}
 			<MenuItem value="remove">
-				<ImageMinus class="w-4 h-4 mr-2 text-neutral-500" />Remove
+				<ImageMinus class="w-4 h-4 mr-2 text-neutral-500" />移除
 			</MenuItem>
 			<MenuSeparator />
 			<MenuItem value="delete" class="text-red-600">
-				<Trash2 class="w-4 h-4 mr-2" />Delete
+				<Trash2 class="w-4 h-4 mr-2" />删除
 			</MenuItem>
 		</MenuContent>
 	</MenuRoot>

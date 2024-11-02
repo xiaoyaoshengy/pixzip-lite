@@ -8,9 +8,9 @@
 	const name = $derived(spaceConfig.formData?.name);
 </script>
 
-<Fieldset legend="Basic">
+<Fieldset legend="基础">
 	<label class="flex items-center justify-between">
-		<span class="font-medium">Name</span>
+		<span class="font-medium">名称</span>
 		<Input
 			class="w-28"
 			value={name}
