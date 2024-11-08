@@ -32,7 +32,7 @@ export function extname(path: string) {
 }
 
 export function thumbImg(filepath: string) {
-	return `${filepath}`;
+	return `thumb:${delimiter}${delimiter}${filepath}`;
 }
 
 export function bytesToSize(bytes: number) {
