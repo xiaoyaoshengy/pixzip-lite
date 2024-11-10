@@ -1,4 +1,4 @@
-import { app, Menu } from 'electron';
+import { app, Menu, protocol } from 'electron';
 import { registerIpcMain } from '@egoist/tipc/main';
 import { restoreOrCreateWindow } from './window';
 import { registerProtocol } from './protocol';
@@ -11,6 +11,17 @@ app.on('window-all-closed', () => {
 if (process.platform !== 'darwin') {
 	app.commandLine.appendSwitch('--enable-features', 'FluentOverlayScrollbar');
 }
+
+protocol.registerSchemesAsPrivileged([
+	{
+		scheme: "thumb",
+		privileges: {
+			standard: true,
+			secure: true,
+			supportFetchAPI: true
+		}
+	}
+])
 
 app
 	.whenReady()
