@@ -6,7 +6,7 @@ sharp.cache(false);
 
 export async function registerProtocol() {
 	protocol.handle('thumb', async (request) => {
-		const replace = `thumb://`;
+		const replace = 'thumb://';
 		const src = request.url;
 		let url = src.replace(replace, '');
 
